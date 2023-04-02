@@ -290,8 +290,23 @@ img {
 .client-list {
   display: flex;
   justify-content: space-between;
-
   gap: 24px;
+}
+.link-clients {
+  display: inline-block;
+  width: 168px;
+  height: 88px;
+  background-image: linear-gradient(
+      to right,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/icons/skills-icon.svg);
+  background-size: 104px 56px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
 }
 
 /* *portfolio menu */
