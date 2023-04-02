@@ -6,6 +6,7 @@
   --team-color: #f4f4fd;
   --primary-color: #404bbf;
   --subtle-color: #e7e9fc;
+  --group-color: #8e8f99;
   --card-set-gap-top: 48px;
   --card-set-gap-left: 24px;
   --card-border: 1px solid var(--subtle-color);
@@ -338,7 +339,7 @@ img {
   justify-content: center;
   background-repeat: no-repeat;
   background-position: center;
-  border: 1px solid #8e8f99;
+  border: 1px solid var(--group-color);
   border-radius: 4px;
 }
 .link-clients:hover,
