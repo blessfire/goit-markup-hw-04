@@ -86,6 +86,8 @@ img {
 }
 .header {
   border-bottom: 1px solid var(--subtle-color);
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
   padding-top: 24px;
   padding-bottom: 24px;
   color: var(--subtle-color);
@@ -312,14 +314,10 @@ img {
 .team-soc-icon {
   fill: var(--team-color);
 }
-
-.link {
-}
-
 .clients {
 }
 .client-icon {
-  fill: var(--group-color);
+  fill: currentColor;
 }
 .client-title {
   font-weight: 700;
@@ -333,6 +331,7 @@ img {
   display: flex;
   justify-content: space-between;
   gap: 24px;
+  color: var(--group-color);
 }
 
 .link-clients {
@@ -346,13 +345,15 @@ img {
   border: 1px solid var(--group-color);
   border-radius: 4px;
 }
-.link-clients:hover,
-.link-clients:focus > .client-icon {
-  border: 1px solid var(--primary-color);
-  fill: var(--primary-color);
+.link-clients {
 }
-.client-icon:focus,
-.client-icon:hover {
+
+.link-clients:hover,
+.link-clients:focus {
+  border: 1px solid var(--primary-color);
+}
+.link-clients:hover,
+.link-clients:focus .client-icon {
   fill: var(--primary-color);
 }
 /* *portfolio menu */
@@ -393,15 +394,16 @@ img {
 .card-set > .item {
   flex-basis: calc(100% / 3 - 48px);
 }
-.item:focus,
-.item:hover {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-}
 .card-content {
   border: var(--card-border);
   border-top: transparent;
   padding: 32px 16px;
+}
+.card-link:focus,
+.card-link:hover {
+  display: block;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .menu-title {
   font-weight: 500;
@@ -409,6 +411,7 @@ img {
   line-height: 1.2;
   color: var(--title-text-color);
 }
+
 .card-text {
   color: var(--primary-text-color);
   margin-top: 8px;
